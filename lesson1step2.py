@@ -4,10 +4,12 @@ fid=urllib.request.urlopen('https://stepik.org/media/attachments/lesson/209717/1
 
 webpage=fid.read().decode('utf-8')
 
-print(webpage)
-
 cpp = str(webpage).count('C++')
 python = str(webpage).lower().count('python')
 
-print(cpp)
-print(python)
+if cpp > python:
+    print('C++')
+elif cpp < python:
+    print('python')
+else:
+    print('')
