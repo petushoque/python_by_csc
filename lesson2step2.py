@@ -16,7 +16,7 @@ while webpage.find('<code>') > -1:
     counter += 1   
     if counter == 6:
         print()
-        print(page[:25])
+        print(webpage[:25])
         print()
     code_start = webpage.find('<code>')
     code_end = webpage.find('</code>')
