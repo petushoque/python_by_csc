@@ -1,6 +1,9 @@
 #подключить библиотеку
 import urllib.request
 
+def sort_by_alphabet(lst):
+    pass
+
 #открыть страницу
 fid=urllib.request.urlopen('https://stepik.org/media/attachments/lesson/209719/2.html')
 
@@ -46,9 +49,8 @@ for i in range(len(code_list)):
         pop3 = code_list[i]
         pop3_count = code_list.count(code_list[i])
         continue          
-print(pop1)
-print(pop1_count)
-print(pop2)
-print(pop2_count)
-print(pop3)
-print(pop3_count)
+    
+result_list = [pop1, pop2, pop3]
+print(result_list)
+# вывести в алфавитном порядке
+
