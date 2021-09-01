@@ -16,6 +16,7 @@ while webpage.find('<code>') > 0:
     code_start = webpage.find('<code>')
     code_end = webpage.find('</code>')
     code = webpage[code_start:code_end]
+    print(code)
     code_list.append(code)
     counter += 1
     webpage = webpage[code_end + 1:]
