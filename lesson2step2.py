@@ -26,8 +26,11 @@ pop3 = ''
 pop3_count = 0
 
 for i in range(len(code_list)):
+    
+    #если слово уже есть в списке, пропускаем итерацию
     if code_list[i] == pop1 or code_list[i] == pop2 or code_list[i] == pop3:
         continue
+    
     if code_list.count(code_list[i]) > pop1_count:
         pop3 = pop2
         pop3_count = pop2_count
