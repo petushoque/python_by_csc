@@ -16,7 +16,7 @@ while webpage.find('<code>') > -1:
     counter += 1   
     if counter == 6:
         print()
-        print(webpage[:25])
+        print(webpage[:50])
         print()
     code_start = webpage.find('<code>')
     code_end = webpage.find('</code>')
@@ -24,7 +24,7 @@ while webpage.find('<code>') > -1:
     code_list.append(code)
     print('элементов в листе:', len(code_list), 'counter: ', counter, code)
     
-    webpage = webpage[code_end + 1:]
+    webpage = webpage[code_end + 7:]
 
 print(counter)
 print(len(code_list))
