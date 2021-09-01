@@ -10,10 +10,15 @@ webpage=fid.read().decode('utf-8').lower()
 code_list = []
 counter = 0
 
+print(webpage.count('<code>'))
+
 while webpage.find('<code>') > 0:
     code_start = webpage.find('<code>')
     code_end = webpage.find('</code>')
+    code = webpage[code_start:code_end]
+    code_list.append(code)
     counter += 1
-    webpage = webpage[code_end + 7:]
+    webpage = webpage[code_end + 1:]
 
 print(counter)
+print(len(code_list))
