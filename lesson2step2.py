@@ -18,3 +18,12 @@ while webpage.find('<code>') > -1:
         code_list.append(code)    
     webpage = webpage[code_end + 7:]
 
+pop1 = ''
+pop1_count = 0
+pop2 = ''
+pop2_count = 0
+pop3 = ''
+pop3_count = 0
+
+for i in range(len(code_list)):
+    code_list[i].count > pop
