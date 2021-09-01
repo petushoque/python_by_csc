@@ -20,7 +20,7 @@ while webpage.find('<code>') > -1:
     # пропускать пустые элементы
     if len(code) > 0:
         code_list.append(code)
-    print('элементов в листе:', len(code_list), 'counter: ', counter, code)
+    print('элементов в листе:', len(code_list), code)
     
     webpage = webpage[code_end + 7:]
 
