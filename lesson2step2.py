@@ -13,12 +13,12 @@ counter = 0
 print(webpage.count('<code>'))
 
 while webpage.find('<code>') > 0:
+    counter += 1    
     code_start = webpage.find('<code>')
     code_end = webpage.find('</code>')
-    code = webpage[code_start:code_end]
-    print(code)
+    code = webpage[code_start + 6:code_end]
+    print('элементов в листе:', len(code_list), 'counter: ', counter, code)
     code_list.append(code)
-    counter += 1
     webpage = webpage[code_end + 1:]
 
 print(counter)
