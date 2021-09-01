@@ -13,7 +13,16 @@ temp = ''
 for c in webpage:
     if c == '<' and temp == '':
         temp += '<'
-    if c = 'c' and temp == '<':
+    if c == 'c' and temp == '<':
         temp += 'c'
-    
-print(webpage)
+    if c == 'o' and temp == '<c':
+        temp += 'o'
+    if c == 'd' and temp == '<co':
+        temp += 'd'
+    if c == 'e' and temp == '<cod':
+        temp += 'e'
+    if c == '>' and temp == '<code':
+        temp += '>'
+    if temp == 'code':
+        state += 1
+print(state)
