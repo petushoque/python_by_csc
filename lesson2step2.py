@@ -1,9 +1,6 @@
 #подключить библиотеку
 import urllib.request
 
-def sort_by_alphabet(lst):
-    pass
-
 #открыть страницу
 fid=urllib.request.urlopen('https://stepik.org/media/attachments/lesson/209719/2.html')
 
@@ -51,6 +48,5 @@ for i in range(len(code_list)):
         continue          
     
 result_list = [pop1, pop2, pop3]
+result_list.sort()
 print(result_list)
-# вывести в алфавитном порядке
-
