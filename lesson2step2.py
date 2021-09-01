@@ -41,8 +41,14 @@ for i in range(len(code_list)):
         pop3_count = pop2_count
         pop2 = code_list[i]
         pop2_count = code_list.count(code_list[i])
-        continue        
+        continue
+    if code_list.count(code_list[i]) > pop3_count:
+        pop3 = code_list[i]
+        pop3_count = code_list.count(code_list[i])
+        continue          
 print(pop1)
 print(pop1_count)
 print(pop2)
 print(pop2_count)
+print(pop3)
+print(pop3_count)
