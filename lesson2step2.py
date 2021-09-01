@@ -13,15 +13,15 @@ temp = ''
 for c in webpage:
     if c == '<' and temp == '':
         temp += '<'
-    if c == 'c' and temp == '<':
+    elif c == 'c' and temp == '<':
         temp += 'c'
-    if c == 'o' and temp == '<c':
+    elif c == 'o' and temp == '<c':
         temp += 'o'
-    if c == 'd' and temp == '<co':
+    elif c == 'd' and temp == '<co':
         temp += 'd'
-    if c == 'e' and temp == '<cod':
+    elif c == 'e' and temp == '<cod':
         temp += 'e'
-    if c == '>' and temp == '<code':
+    elif c == '>' and temp == '<code':
         temp += '>'
     if temp == '<code>':
         print(temp)
