@@ -28,4 +28,8 @@ for c in webpage:
         state += 1
         temp = ''
         print(state)
+        
+code_string = webpage.count('<code>')
+print(code_string)
+
 print(state)
