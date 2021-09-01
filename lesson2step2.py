@@ -23,6 +23,9 @@ for c in webpage:
         temp += 'e'
     if c == '>' and temp == '<code':
         temp += '>'
-    if temp == 'code':
+    if temp == '<code>':
+        print(temp)
         state += 1
+        temp = ''
+        print(state)
 print(state)
