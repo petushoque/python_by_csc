@@ -29,8 +29,20 @@ for i in range(len(code_list)):
     if code_list[i] == pop1 or code_list[i] == pop2 or code_list[i] == pop3:
         continue
     if code_list.count(code_list[i]) > pop1_count:
+        pop3 = pop2
+        pop3_count = pop2_count
+        pop2 = pop1
+        pop2_count = pop1_count
         pop1 = code_list[i]
         pop1_count = code_list.count(code_list[i])
-        
+        continue
+    if code_list.count(code_list[i]) > pop2_count:
+        pop3 = pop2
+        pop3_count = pop2_count
+        pop2 = code_list[i]
+        pop2_count = code_list.count(code_list[i])
+        continue        
 print(pop1)
 print(pop1_count)
+print(pop2)
+print(pop2_count)
